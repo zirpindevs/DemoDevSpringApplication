@@ -54,16 +54,16 @@ Este proyecto tiene como objetivo construir un servicio para obtener la informac
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tuusuario/tuproyecto.git
+   git clone https://github.com/zirpindevs/DemoDevSpringApplication.git
    cd tuproyecto
    ```
 
 2. **Configurar la base de datos**:
    Edita el archivo `src/main/resources/application.properties` para proporcionar los detalles de tu base de datos MySQL:
    ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/tu_base_de_datos
-   spring.datasource.username=tu_usuario
-   spring.datasource.password=tu_contraseña
+   spring.datasource.url=jdbc:mysql://zirpin.es:3306/DemodevSrpingDB
+   spring.datasource.username=devSrpingUser
+   spring.datasource.password=devSrpingUser1234
 
    spring.jpa.hibernate.ddl-auto=update
    spring.jpa.show-sql=true
@@ -79,9 +79,6 @@ Este proyecto tiene como objetivo construir un servicio para obtener la informac
    ```bash
    mvn spring-boot:run
    ```
-
-5. **Acceso a Swagger UI**:
-   - Documentación interactiva: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ---
 
@@ -128,17 +125,12 @@ Los tests cubren los siguientes casos:
 - **Consulta de proveedores**:
   - Lista vacía.
   - Lista con datos.
-- **Guardar un proveedor**.
-- **Buscar proveedor por ID** (existente y no existente).
-
 ---
 
 ## Autor
 
-- **Tu Nombre**  
-  - Correo: [tuemail@dominio.com](mailto:tuemail@dominio.com)
-  - LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
-
+- **Javier Moreno Cidoncha**  
+  - Correo: [zirpin@gmail.com](mailto:tuemail@dominio.com)
 ---
 
 © 2025 - Proyecto desarrollado con Java Spring Boot.
