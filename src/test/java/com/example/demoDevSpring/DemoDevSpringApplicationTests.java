@@ -67,5 +67,4 @@ class DemoDevSpringApplicationTests {
 		List<Proveedor> resultado = proveedorService.obtenerTodosLosProveedores();
 		assertTrue(resultado.isEmpty());
 	}
-
 }
