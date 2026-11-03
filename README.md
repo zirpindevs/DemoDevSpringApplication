@@ -55,15 +55,22 @@ Este proyecto tiene como objetivo construir un servicio para obtener la informac
 1. **Clonar el repositorio**:
    ```bash
    git clone https://github.com/zirpindevs/DemoDevSpringApplication.git
-   cd tuproyecto
+   cd DemoDevSpringApplication
    ```
 
 2. **Configurar la base de datos**:
-   Edita el archivo `src/main/resources/application.properties` para proporcionar los detalles de tu base de datos MySQL:
+   Configura la conexión mediante variables de entorno (no guardes credenciales reales en el repositorio). Por ejemplo, puedes definirlas antes de arrancar la aplicación:
+   ```bash
+   export SPRING_DATASOURCE_URL='jdbc:mysql://localhost:3306/demo_db'
+   export SPRING_DATASOURCE_USERNAME='demo_user'
+   export SPRING_DATASOURCE_PASSWORD='change-me'
+   ```
+
+   En `src/main/resources/application.properties`, usa placeholders:
    ```properties
-   spring.datasource.url=jdbc:mysql://zirpin.es:3306/DemodevSrpingDB
-   spring.datasource.username=devSrpingUser
-   spring.datasource.password=devSrpingUser1234
+   spring.datasource.url=${SPRING_DATASOURCE_URL}
+   spring.datasource.username=${SPRING_DATASOURCE_USERNAME}
+   spring.datasource.password=${SPRING_DATASOURCE_PASSWORD}
 
    spring.jpa.hibernate.ddl-auto=update
    spring.jpa.show-sql=true
